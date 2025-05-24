@@ -1,1 +1,35 @@
-@import "tailwindcss"
+@import "tailwindcss";
+
+
+
+body {
+  outline: 1px solid red;
+}
+@layer base {
+  :root {
+    /* Colors */
+    --color-primary: #363636;
+    --color-secondary: #bac9ba;
+    --color-accent: #ae2300;
+    /* Fonts */
+    --font-abel: 'Abel', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-primary {
+    color: var(--color-primary);
+  }
+  .text-secondary {
+    color: var(--color-secondary);
+  }
+  .text-accent {
+    color: var(--color-accent);
+  }
+  .bg-gray {
+    background-color: var(--color-secondary);
+  }
+  .font-abel {
+    font-family: var(--font-abel);
+  }
+}
