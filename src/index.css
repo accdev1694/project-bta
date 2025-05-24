@@ -13,6 +13,8 @@ body {
     --color-accent: #ae2300;
     /* Fonts */
     --font-abel: "Abel", sans-serif;
+    --font-inria: "Inria Sans", serif;
+    --font-dosis: "Dosis", sans-serif;
     /* img- hero */
     --image-hero: url("/images/hero-img.jpg");
   }
@@ -37,6 +39,12 @@ body {
   }
   .font-abel {
     font-family: var(--font-abel);
+  }
+  .font-inria {
+    font-family: var(--font-inria);
+  }
+  .font-dosis {
+    font-family: var(--font-dosis);
   }
   .transition {
     transition: all 0.3s ease-in-out;
