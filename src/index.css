@@ -9,8 +9,11 @@ body {
     /* Colors */
     --color-primary: #363636;
     --color-secondary: #379537;
-    --color-default: #d2d2d2;
+    --color-default: #c4c4c4;
     --color-accent: #ae2300;
+    --color-tranparent-green: #37953726;
+    --color-transparent-default: #d2d2d22e;
+    --color-dark-green: #011701;
     /* Fonts */
     --font-abel: "Abel", sans-serif;
     --font-inria: "Inria Sans", serif;
@@ -30,12 +33,24 @@ body {
   .text-accent {
     color: var(--color-accent);
   }
+  .text-default {
+    color: var(--color-default);
+  }
   .bg-default {
     background-color: var(--color-default);
     /* opacity: 60%; */
   }
+  .bg-transparent-default {
+    background-color: var(--color-transparent-default);
+  }
+  .bg-transparent-green {
+    background-color: var(--color-tranparent-green);
+  }
   .bg-secondary {
     background-color: var(--color-secondary);
+  }
+  .bg-dark-green {
+    background-color: var(--color-dark-green);
   }
   .font-abel {
     font-family: var(--font-abel);
