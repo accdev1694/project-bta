@@ -1,19 +1,20 @@
 @import "tailwindcss";
 
-
-
 body {
   /* outline: 1px solid red; */
+  background-color: var(--color-default);
 }
 @layer base {
   :root {
     /* Colors */
     --color-primary: #363636;
     --color-secondary: #379537;
-    --color-bg: #d2d2d2;
+    --color-default: #d2d2d2;
     --color-accent: #ae2300;
     /* Fonts */
-    --font-abel: 'Abel', sans-serif;
+    --font-abel: "Abel", sans-serif;
+    /* img- hero */
+    --image-hero: url("/images/hero-img.jpg");
   }
 }
 
@@ -27,13 +28,35 @@ body {
   .text-accent {
     color: var(--color-accent);
   }
-  .bg-gray {
-    background-color: var(--color-bg);
+  .bg-default {
+    background-color: var(--color-default);
+    /* opacity: 60%; */
+  }
+  .bg-secondary {
+    background-color: var(--color-secondary);
   }
   .font-abel {
     font-family: var(--font-abel);
   }
   .transition {
     transition: all 0.3s ease-in-out;
+  }
+  .hero-image {
+    background-image: var(--image-hero);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #363636db;
+    background-blend-mode: overlay;
+  }
+  .border-secondary {
+    border: 1px solid var(--color-secondary);
+  }
+  .btn{
+    border: 1px solid var(--color-secondary);
+  }
+  .btn:hover {
+    color: var(--color-accent);
+    
   }
 }

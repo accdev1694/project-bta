@@ -1,20 +1,34 @@
 import { Link } from "react-router-dom";
+import JoinUs from "./JoinUs";
+import DonateBtn from "./DonateBtn";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center">
-      <Link
-        className="flex justify-center items-center"
-        to="/"
-      >
-        <img className="w-48" src="/bta-logo-light.png" alt="project bta logo" />
-      </Link>
+    <nav className="fixed top-0 left-0 right-0 flex justify-between items-center pt-8 px-36 pb-4 z-10 bg-default">
+      <a className="flex justify-center items-center" href="/">
+        <img
+          className="w-48"
+          src="/bta-logo-light.png"
+          alt="project bta logo"
+        />
+      </a>
       <div className="flex font-abel gap-6 justify-center items-center">
-        <Link className="hover:font-bold  transition" to="/">Home</Link>
-        <Link className="hover:font-bold transition" to="/mission">Mission</Link>
-        <Link className="hover:font-bold transition" to="/campaigns">Campaigns</Link>
-        <Link className="hover:font-bold transition" to="/Donate">Donate</Link>
-        <button className="border font-bold text-secondary transition hover:rounded-lg px-4 py-2">Join</button>
+        <a className="hover:font-bold  transition" href="/">
+          Home
+        </a>
+        <a className="hover:font-bold transition" href="#mission">
+          Mission
+        </a>
+        <a className="hover:font-bold transition" href="#campaigns">
+          Campaigns
+        </a>
+        <a className="hover:font-bold transition" href="#donate">
+          Donate
+        </a>
+        <div className="flex">
+          <DonateBtn />
+          <JoinUs />
+        </div>
       </div>
     </nav>
   );

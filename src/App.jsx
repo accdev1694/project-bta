@@ -1,12 +1,11 @@
 import Navbar from "./components/Navbar";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Home from "./components/sections/Home";
 
 function App() {
   return (
-    <div className="mt-12 px-36">
-      <Router>
-        <Navbar />
-      </Router>
+    <div className="mt-12">
+      <Navbar />
+      <Home />
     </div>
   );
 }
