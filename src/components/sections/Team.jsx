@@ -1,60 +1,62 @@
-import HeadingOne from "../HeadingOne";
-import HeadingTwo from "../HeadingTwo";
-import { partners } from "../../utils.js";
+import HeadingOne from "../HeadingOne.jsx";
+import HeadingTwo from "../HeadingTwo.jsx";
+import { team } from "../../utils.js";
 
-const Partners = () => {
-  if (!partners || partners.length < 1) {
+const Team = () => {
+  if (!team || team.length < 1) {
     return;
   }
 
   return (
-    <section id="partners" className="min-h-screen pt-21 text-center bg-white px-[15%]">
+    <section id="team" className="min-h-screen pt-21 text-center bg-white px-[15%]">
       <HeadingOne
         title="Meet the passionate individuals behind our mission."
         className="mb-24"
       />
-      <HeadingTwo title="Our Partners" className="text-secondary" />
+      <HeadingTwo title="Our Team" className="text-secondary" />
       <div className="grid grid-cols-4 mt-4">
-        {partners.map((partner) => (
+        {team.map((member) => (
           <div
-            key={partner.id}
+            key={member.id}
             className="flex flex-col items-center justify-between mt-12"
           >
             <img
               className="rounded-full w-18 border-secondary"
-              src={partner.image}
-              alt={partner.name}
+              src={member.image}
+              alt={member.name}
             />
             <h3 className="mt-2 font-bold text-sm font-abel tracking-wide">
-              {partner.name}
+              {member.name}
             </h3>
-            <p className="text-sm font-inria">{partner.position}</p>
-            <p className="text-xs font-inria w-48 mt-4">
-              {partner.description}
+            <p className="text-sm font-inria">{member.position}</p>
+            <p className="text-[12px] font-inria w-48 mt-4">
+              {member.description}
             </p>
             <div className="flex justify-center items-center gap-4 mt-4">
-              <a href={partner.handles.instagram}>
+              <a href={member.handles.instagram} target="_blank">
                 <img
                   className="w-4"
                   src="/images/instagram.png"
                   alt="Instagram logo"
+                  
                 />
               </a>
-              <a href={partner.handles.facebook}>
+              <a href={member.handles.facebook} target="_blank">
                 <img
                   className="w-4"
                   src="/images/facebook.png"
                   alt="Facebook logo"
+                  target="_blank"
                 />
               </a>
-              <a href={partner.handles.twitter}>
+              <a href={member.handles.twitter} target="_blank">
                 <img
                   className="w-4"
                   src="/images/twitter.png"
                   alt="Twitter logo"
                 />
               </a>
-              <a href={partner.handles.linkedin}>
+              <a href={member.handles.linkedin} target="_blank">
                 <img
                   className="w-4"
                   src="/images/linkedin.png"
@@ -69,4 +71,4 @@ const Partners = () => {
   );
 };
 
-export default Partners;
+export default Team;

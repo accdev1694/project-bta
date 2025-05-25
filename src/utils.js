@@ -1,11 +1,10 @@
-export const partners = [
+export const team = [
   {
-    image:
-      "/images/comfort.png",
+    image: "/images/comfort.png",
     name: "Comfort Aboje",
     position: "Founder/Volunteer",
     description:
-      "Comfort Aboje is the founder of Comfort Aboje Foundation, ...",
+      "Driven by compassion, care, and a desire to inspire, her generous heart led to the founding of this NGO.",
     handles: {
       instagram: "https://www.instagram.com/comfortaboje/",
       facebook: "https://www.facebook.com/comfortaboje",
@@ -15,12 +14,11 @@ export const partners = [
     id: 1,
   },
   {
-    image:
-      "/images/oloche.png",
+    image: "/images/oloche.png",
     name: "Oloche Aboje",
     position: "Co-Founder",
     description:
-      "Oloche Aboje is the co-founder of Comfort Aboje Foundation, ...",
+      "Oloche Aboje is the co-founder, inspired by compassion and a drive to uplift others.",
     handles: {
       instagram: "https://www.instagram.com/partner2/",
       facebook: "https://www.facebook.com/partner2",
@@ -30,25 +28,25 @@ export const partners = [
     id: 2,
   },
   {
-    image:
-      "/images/terdy.png",
+    image: "/images/terdy.png",
     name: "Terdoo Oladipupo",
-    position: "Regional Director",
-    description: "Terdoo Oladipupo is the Regional Director ...",
+    position: "Country Director",
+    description:
+      "Terdoo Oladipupo, Country Director of Project Bta, is a dedicated and passionate partner.",
     handles: {
-      instagram: "https://www.instagram.com/partner3/",
-      facebook: "https://www.facebook.com/partner3",
-      twitter: "https://twitter.com/partner3",
-      linkedin: "https://www.linkedin.com/in/partner3/",
+      instagram: "https://www.instagram.com/terdooebenezer/",
+      facebook: "https://www.facebook.com/share/1B2YgEhNS9/",
+      twitter: "https://x.com/joy_terdoo6478?t=hnV6MpnQJ75I_NWMziWN1Q&s=08",
+      linkedin:
+        "https://www.linkedin.com/in/terdoo-joy-oladipupo-5b9037280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
     },
     id: 3,
   },
   {
-    image:
-      "/images/solomon.png",
+    image: "/images/solomon.png",
     name: "Solomon Gana",
     position: "Position Four",
-    description: "Solomon Gana is a partner with Comfort Aboje Foundation",
+    description: "Solomon Gana, Social Media Manager, is a valued partner of the Comfort Aboje Foundation.",
     handles: {
       instagram: "https://www.instagram.com/partner4/",
       facebook: "https://www.facebook.com/partner4",
@@ -57,7 +55,6 @@ export const partners = [
     },
     id: 4,
   },
- 
 ];
 
 export const reviews = [

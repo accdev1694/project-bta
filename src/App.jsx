@@ -5,7 +5,7 @@ import Campaigns from "./components/sections/Campaigns";
 import Contribute from "./components/sections/Contribute";
 import Home from "./components/sections/Home";
 import Mission from "./components/sections/Mission";
-import Partners from "./components/sections/Partners";
+import Team from "./components/sections/Team";
 import Testimonials from "./components/sections/Testimonials";
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         <JoinUs />
       </div>
       <Campaigns />
-      <Partners />
+      <Team />
       <Contribute />
       <Testimonials />
     </div>
