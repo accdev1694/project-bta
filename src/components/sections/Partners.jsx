@@ -8,20 +8,20 @@ const Partners = () => {
   }
 
   return (
-    <section id="partners" className="min-h-screen pt-21 text-center bg-white">
+    <section id="partners" className="min-h-screen pt-21 text-center bg-white px-[15%]">
       <HeadingOne
         title="Meet the passionate individuals behind our mission."
         className="mb-24"
       />
-      <HeadingTwo title="Our Partners" className="text-primary" />
-      <div className="grid grid-cols-6 mt-4">
+      <HeadingTwo title="Our Partners" className="text-secondary" />
+      <div className="grid grid-cols-4 mt-4">
         {partners.map((partner) => (
           <div
             key={partner.id}
             className="flex flex-col items-center justify-between mt-12"
           >
             <img
-              className="rounded-full w-18"
+              className="rounded-full w-18 border-secondary"
               src={partner.image}
               alt={partner.name}
             />

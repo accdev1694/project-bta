@@ -4,7 +4,7 @@ import DonateBtn from "./DonateBtn";
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 right-0 flex justify-between items-center py-2 px-36 z-10 bg-default">
+    <nav className="fixed top-0 left-0 right-0 flex justify-between items-center py-2 px-36 z-10 bg-white border-b-accent">
       <a className="flex justify-center items-center" href="#">
         <img
           className="w-48"

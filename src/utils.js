@@ -1,9 +1,9 @@
 export const partners = [
   {
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFv8yKLUE-rGAPYj41Bigfne3zUWW-TD0Z7A&s",
+      "/images/comfort.png",
     name: "Comfort Aboje",
-    position: "Founder/CEO",
+    position: "Founder/Volunteer",
     description:
       "Comfort Aboje is the founder of Comfort Aboje Foundation, ...",
     handles: {
@@ -16,7 +16,7 @@ export const partners = [
   },
   {
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFv8yKLUE-rGAPYj41Bigfne3zUWW-TD0Z7A&s",
+      "/images/oloche.png",
     name: "Oloche Aboje",
     position: "Co-Founder",
     description:
@@ -31,7 +31,7 @@ export const partners = [
   },
   {
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFv8yKLUE-rGAPYj41Bigfne3zUWW-TD0Z7A&s",
+      "/images/terdy.png",
     name: "Terdoo Oladipupo",
     position: "Regional Director",
     description: "Terdoo Oladipupo is the Regional Director ...",
@@ -45,7 +45,7 @@ export const partners = [
   },
   {
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFv8yKLUE-rGAPYj41Bigfne3zUWW-TD0Z7A&s",
+      "/images/solomon.png",
     name: "Solomon Gana",
     position: "Position Four",
     description: "Solomon Gana is a partner with Comfort Aboje Foundation",
@@ -57,34 +57,7 @@ export const partners = [
     },
     id: 4,
   },
-  {
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFv8yKLUE-rGAPYj41Bigfne3zUWW-TD0Z7A&s",
-    name: "Partner Five",
-    position: "Position Five",
-    description: "Partner Five is a partner with Comfort Aboje Foundation",
-    handles: {
-      instagram: "https://www.instagram.com/partner5/",
-      facebook: "https://www.facebook.com/partner5",
-      twitter: "https://twitter.com/partner5",
-      linkedin: "https://www.linkedin.com/in/partner5/",
-    },
-    id: 5,
-  },
-  {
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFv8yKLUE-rGAPYj41Bigfne3zUWW-TD0Z7A&s",
-    name: "Partner Six",
-    position: "Position Six",
-    description: "Partner Six is a partner with Comfort Aboje Foundation",
-    handles: {
-      instagram: "https://www.instagram.com/partner6/",
-      facebook: "https://www.facebook.com/partner6",
-      twitter: "https://twitter.com/partner6",
-      linkedin: "https://www.linkedin.com/in/partner6/",
-    },
-    id: 6,
-  },
+ 
 ];
 
 export const reviews = [

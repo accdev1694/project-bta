@@ -28,6 +28,7 @@ html, body {
     --color-tranparent-green: #37953726;
     --color-transparent-default: #d2d2d22e;
     --color-dark-green: #011701;
+    
     /* Fonts */
     --font-abel: "Abel", sans-serif;
     --font-merienda: "Merienda", serif;
@@ -56,6 +57,9 @@ html, body {
   .bg-default {
     background-color: var(--color-default);
     /* opacity: 60%; */
+  }
+  .text-dark-green {
+    color: var(--color-dark-green);
   }
   .bg-transparent-default {
     background-color: var(--color-transparent-default);
@@ -97,11 +101,17 @@ html, body {
   .border-secondary {
     border: 1px solid var(--color-secondary);
   }
+  .border-b-accent {
+    border-bottom: 1px solid var(--color-accent);
+  }
+  .border-accent {
+    border: 1px solid var(--color-accent);
+  }
   .btn{
     border: 1px solid var(--color-secondary);
   }
   .btn:hover {
     color: var(--color-accent);
-    
-  }
+      }
+  
 }
