@@ -12,7 +12,7 @@ export const partners = [
       twitter: "https://twitter.com/comfortaboje",
       linkedin: "https://www.linkedin.com/in/comfortaboje/",
     },
-    key: 1,
+    id: 1,
   },
   {
     image:
@@ -27,7 +27,7 @@ export const partners = [
       twitter: "https://twitter.com/partner2",
       linkedin: "https://www.linkedin.com/in/partner2/",
     },
-    key: 2,
+    id: 2,
   },
   {
     image:
@@ -41,7 +41,7 @@ export const partners = [
       twitter: "https://twitter.com/partner3",
       linkedin: "https://www.linkedin.com/in/partner3/",
     },
-    key: 3,
+    id: 3,
   },
   {
     image:
@@ -55,7 +55,7 @@ export const partners = [
       twitter: "https://twitter.com/partner4",
       linkedin: "https://www.linkedin.com/in/partner4/",
     },
-    key: 4,
+    id: 4,
   },
   {
     image:
@@ -69,7 +69,7 @@ export const partners = [
       twitter: "https://twitter.com/partner5",
       linkedin: "https://www.linkedin.com/in/partner5/",
     },
-    key: 5,
+    id: 5,
   },
   {
     image:
@@ -83,6 +83,36 @@ export const partners = [
       twitter: "https://twitter.com/partner6",
       linkedin: "https://www.linkedin.com/in/partner6/",
     },
-    key: 6,
+    id: 6,
+  },
+];
+
+export const reviews = [
+  {
+    message:
+      "The Comfort Aboje Foundation has transformed my life and the lives of many children in our community. Their support has given us hope and opportunities we never thought possible.",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFv8yKLUE-rGAPYj41Bigfne3zUWW-TD0Z7A&s",
+    name: "Sarah Michaels",
+    position: "Propreitor, Quality Orphanage",
+    id: 1,
+  },
+  {
+    message:
+      "The Comfort Aboje Foundation has been a beacon of hope for our community. Their dedication to improving the lives of children is truly inspiring.",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFv8yKLUE-rGAPYj41Bigfne3zUWW-TD0Z7A&s",
+    name: "John Doe",
+    position: "Director, Community Outreach",
+    id: 2,
+  },
+  {
+    message:
+      "My School has recieved many contributions that has put smiles on the faces of the students. i want to say a big thank you",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFv8yKLUE-rGAPYj41Bigfne3zUWW-TD0Z7A&s",
+    name: "Charles Dickens",
+    position: "Manager, Oceans Schools",
+    id: 3,
   },
 ];

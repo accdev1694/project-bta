@@ -6,6 +6,7 @@ import Contribute from "./components/sections/Contribute";
 import Home from "./components/sections/Home";
 import Mission from "./components/sections/Mission";
 import Partners from "./components/sections/Partners";
+import Testimonials from "./components/sections/Testimonials";
 function App() {
   return (
     <div className="mt-12">
@@ -19,6 +20,7 @@ function App() {
       <Campaigns />
       <Partners />
       <Contribute />
+      <Testimonials />
     </div>
   );
 }
