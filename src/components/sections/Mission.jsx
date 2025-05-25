@@ -4,13 +4,13 @@ import HeadingTwo from "../HeadingTwo";
 
 const Mission = () => {
   return (
-    <div
+    <section
       id="mission"
-      className="text-center min-h-screen bg-dark-green w-screen text-white mt-24"
+      className="text-center min-h-screen bg-dark-green w-screen text-white px-[15%] mt-21 pt-21"
     >
-      <HeadingOne title="THERE IS SOMETHING YOU CAN DO" />
+      <HeadingOne title="There is Something You Can Do" />
       <HeadingTwo title="Our Mission" />
-      <div className="grid grid-cols-3">
+      <div className=" w-full flex justify-between items-center">
         <Goals
           text="To support underprivileged children in orphanages and IDP camps."
           icon="images/goal1.png"
@@ -27,7 +27,7 @@ const Mission = () => {
           alt="doll made from old clothes"
         />
       </div>
-    </div>
+    </section>
   );
 };
 

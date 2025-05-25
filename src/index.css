@@ -4,6 +4,20 @@ body {
   /* outline: 1px solid red; */
   background-color: var(--color-default);
 }
+ html {
+      scroll-behavior: smooth;
+    }
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+*{
+  /* outline: 1px solid blue; */
+  box-sizing: border-box;
+}
+
 @layer base {
   :root {
     /* Colors */
@@ -16,6 +30,7 @@ body {
     --color-dark-green: #011701;
     /* Fonts */
     --font-abel: "Abel", sans-serif;
+    --font-merienda: "Merienda", serif;
     --font-inria: "Inria Sans", serif;
     --font-dosis: "Dosis", sans-serif;
     /* img- hero */
@@ -24,6 +39,7 @@ body {
 }
 
 @layer utilities {
+  
   .text-primary {
     color: var(--color-primary);
   }
@@ -61,16 +77,18 @@ body {
   .font-dosis {
     font-family: var(--font-dosis);
   }
+  .font-merienda {
+    font-family: var(--font-merienda);
+  }
   .transition {
     transition: all 0.3s ease-in-out;
   }
   .hero-image {
     background-image: var(--image-hero);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #363636db;
+    background-color: #363636;
     background-blend-mode: overlay;
+    /* background-position: center; */
+    background-size: cover;
   }
   .border-secondary {
     border: 1px solid var(--color-secondary);

@@ -4,8 +4,8 @@ import DonateBtn from "./DonateBtn";
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 right-0 flex justify-between items-center pt-8 px-36 pb-4 z-10 bg-default">
-      <a className="flex justify-center items-center" href="/">
+    <nav className="fixed top-0 left-0 right-0 flex justify-between items-center py-2 px-36 z-10 bg-default">
+      <a className="flex justify-center items-center" href="#">
         <img
           className="w-48"
           src="/bta-logo-light.png"
@@ -13,7 +13,7 @@ const Navbar = () => {
         />
       </a>
       <div className="flex font-abel gap-6 justify-center items-center">
-        <a className="hover:font-bold  transition" href="/">
+        <a className="hover:font-bold  transition" href="#">
           Home
         </a>
         <a className="hover:font-bold transition" href="#mission">
@@ -22,8 +22,8 @@ const Navbar = () => {
         <a className="hover:font-bold transition" href="#campaigns">
           Campaigns
         </a>
-        <a className="hover:font-bold transition" href="#donate">
-          Donate
+        <a className="hover:font-bold transition" href="#partners">
+          Partners
         </a>
         <div className="flex">
           <DonateBtn />

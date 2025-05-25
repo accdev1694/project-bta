@@ -1,5 +1,5 @@
-const HeadingOne = ({ title }) => {
-    return ( <h1 className="mb-36 text-md text-white text-center font-bold font-inria mx-auto text-shadow-xl">
+const HeadingOne = ({ title, className }) => {
+    return ( <h1 className={`mb-20 text-md text-secondary text-center font-bold font-merienda mx-auto text-shadow-xl ${className}`}>
         {title}
       </h1> );
 }
