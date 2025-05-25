@@ -11,7 +11,7 @@ const Partners = () => {
     <section id="partners" className="min-h-screen pt-21 text-center bg-white">
       <HeadingOne
         title="Meet the passionate individuals behind our mission."
-        className="mb-6"
+        className="mb-24"
       />
       <HeadingTwo title="Our Partners" className="text-primary" />
       <div className="grid grid-cols-6 mt-4">

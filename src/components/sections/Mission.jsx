@@ -8,7 +8,7 @@ const Mission = () => {
       id="mission"
       className="text-center min-h-screen bg-dark-green w-screen text-white px-[15%] mt-21 pt-21"
     >
-      <HeadingOne title="There is Something You Can Do" />
+      <HeadingOne title="There is Something You Can Do" className="mb-20"/>
       <HeadingTwo title="Our Mission" />
       <div className=" w-full flex justify-between items-center">
         <Goals

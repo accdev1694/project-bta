@@ -2,6 +2,7 @@ import DonateBtn from "./components/DonateBtn";
 import JoinUs from "./components/JoinUs";
 import Navbar from "./components/Navbar";
 import Campaigns from "./components/sections/Campaigns";
+import Contribute from "./components/sections/Contribute";
 import Home from "./components/sections/Home";
 import Mission from "./components/sections/Mission";
 import Partners from "./components/sections/Partners";
@@ -17,6 +18,7 @@ function App() {
       </div>
       <Campaigns />
       <Partners />
+      <Contribute />
     </div>
   );
 }

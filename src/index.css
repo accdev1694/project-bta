@@ -33,6 +33,7 @@ html, body {
     --font-merienda: "Merienda", serif;
     --font-inria: "Inria Sans", serif;
     --font-dosis: "Dosis", sans-serif;
+    --dancing-script: "Dancing Script", cursive;
     /* img- hero */
     --image-hero: url("/images/hero-img.jpg");
   }
@@ -79,6 +80,9 @@ html, body {
   }
   .font-merienda {
     font-family: var(--font-merienda);
+  }
+  .font-dancing-script {
+    font-family: var(--dancing-script);
   }
   .transition {
     transition: all 0.3s ease-in-out;
