@@ -11,7 +11,7 @@ const Donate = () => {
       />
       <HeadingTwo title="Make a Difference Today" className="text-primary" />
       <p className="text-primary mt-12">
-        Please Make a donation of Cash, Preloved Items or Food
+        Please Make a donation of <span className="font-bold text-secondary">Items</span> or <span className="font-bold text-secondary">Cash</span>
       </p>
       <div className="flex justify-center items-center mt-4">
         <DonateLink title="Items" className="text-primary cursor-pointer" />{" "}

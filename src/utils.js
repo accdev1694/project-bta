@@ -1,8 +1,9 @@
+
 export const team = [
   {
     image: "/images/comfort.png",
     name: "Comfort Aboje",
-    position: "Founder/Volunteer",
+    position: "Founder/Volunteer, Project BTA",
     description:
       "Driven by compassion, care, and a desire to inspire, her generous heart led to the founding of this NGO.",
     handles: {
@@ -17,9 +18,9 @@ export const team = [
   {
     image: "/images/oloche.png",
     name: "Oloche Aboje",
-    position: "Co-Founder",
+    position: "Co-Founder, Project BTA",
     description:
-      "Oloche Aboje is the co-founder, inspired by compassion and a drive to uplift others.",
+      "Develops and maintains website, third-party integrations, and manages donations and collections",
     handles: {
       instagram: "https://www.instagram.com/a.oloche?igsh=MW4xemR2ZGdpMHZ4Mg==",
       facebook: "https://www.facebook.com/share/1AdBL8DkWY/",
@@ -31,10 +32,10 @@ export const team = [
   },
   {
     image: "/images/terdy.png",
-    name: "Terdoo Oladipupo",
-    position: "Country Director",
+    name: "Terdoo Joy Oladipupo",
+    position: "Country Director, Project BTA",
     description:
-      "Terdoo Oladipupo, Country Director of Project Bta, is a dedicated and passionate team player.",
+      "Dedicated and passionate Partner, organising outreaches, follow-ups, and logistics management.",
     handles: {
       instagram: "https://www.instagram.com/terdooebenezer/",
       facebook: "https://www.facebook.com/share/1B2YgEhNS9/",
@@ -47,9 +48,9 @@ export const team = [
   {
     image: "/images/solomon.png",
     name: "Solomon Ijauka",
-    position: "SM Manager",
+    position: "SM Manager, Project BTA",
     description:
-      "Solomon Ijauka, Social Media Manager, is a valued team member of Project Bta.",
+      "Developing and Executing Digital Communication Strategies and Community-based training sessions.",
     handles: {
       instagram: "https://www.instagram.com/solomonijauka?igsh=NWxtbTV2MnNsYjNj",
       facebook: "https://www.facebook.com/share/1ANmPEDe8k/",
@@ -90,3 +91,17 @@ export const reviews = [
     id: 3,
   },
 ];
+
+export const upcomingEvent = [
+  {url: "/images/upcoming/orphanage1.png", alt: "Food Sharing"},
+  {url: "/images/upcoming/orphanage2.png", alt: "Clothing Distribution"},
+  {url: "/images/upcoming/orphanage3.png", alt: "School Supplies"},
+  {url: "/images/upcoming/orphanage4.png", alt: "Health Checkup"},
+]
+
+export const previousEvent = [
+  {url: "/images/upcoming/orphanage1.png", alt: "Food Sharing"},
+  {url: "/images/upcoming/orphanage2.png", alt: "Clothing Distribution"},
+  {url: "/images/upcoming/orphanage3.png", alt: "School Supplies"},
+  {url: "/images/upcoming/orphanage4.png", alt: "Health Checkup"},
+]
