@@ -1,8 +1,7 @@
-import DonateBtn from "./components/DonateBtn";
-import JoinUs from "./components/JoinUs";
+import DonateLink from "./components/DonateLink";
 import Navbar from "./components/Navbar";
 import Campaigns from "./components/sections/Campaigns";
-import Contribute from "./components/sections/Contribute";
+import Donate from "./components/sections/Donate";
 import Home from "./components/sections/Home";
 import Mission from "./components/sections/Mission";
 import Team from "./components/sections/Team";
@@ -14,12 +13,11 @@ function App() {
       <Home />
       <Mission />
       <div className="flex my-12 ml-58">
-        <DonateBtn />
-        <JoinUs />
+        <DonateLink href="#donate" title="Donate" className="bg-secondary text-white" />
       </div>
       <Campaigns />
       <Team />
-      <Contribute />
+      <Donate />
       <Testimonials />
     </div>
   );

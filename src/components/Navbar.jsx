@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import JoinUs from "./JoinUs";
-import DonateBtn from "./DonateBtn";
+import DonateLink from "./DonateLink";
 
 const Navbar = () => {
   return (
@@ -22,12 +21,11 @@ const Navbar = () => {
         <a className="hover:font-bold transition" href="#campaigns">
           Campaigns
         </a>
-        <a className="hover:font-bold transition" href="#partners">
-          Partners
+        <a className="hover:font-bold transition" href="#team">
+          Team
         </a>
         <div className="flex">
-          <DonateBtn />
-          <JoinUs />
+          <DonateLink href="#donate" title="Donate" className="bg-secondary text-white" />
         </div>
       </div>
     </nav>
