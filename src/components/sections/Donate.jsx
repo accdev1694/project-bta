@@ -14,8 +14,13 @@ const Donate = () => {
         Please Make a donation of Cash, Preloved Items or Food
       </p>
       <div className="flex justify-center items-center mt-4">
-        <DonateLink title="Items" className="text-secondary" /> {/*Form, Map and Calender for collection*/}
-        <DonateLink title="Cash" className="bg-secondary text-white" />   {/*Stripe Integration*/}
+        <DonateLink title="Items" className="text-primary cursor-pointer" />{" "}
+        {/*Form, Map and Calender for collection*/}
+        <DonateLink
+          title="Cash"
+          className="bg-secondary text-white cursor-pointer"
+        />{" "}
+        {/*Stripe Integration*/}
       </div>
       <p className="mt-12 font-dancing-script text-2xl mb-2">
         "There can be no keener revelation of a society's soul than the way in

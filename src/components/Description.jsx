@@ -1,5 +1,5 @@
-const Description = ({text}) => {
-    return ( <p className="text-lg text-white mt-2 mb-6 font-dosis tracking-wider">
+const Description = ({text, className}) => {
+    return ( <p className={`${className} text-lg  mt-2 mb-6 font-dosis tracking-wider`}>
          {text}
         </p> );
 }
