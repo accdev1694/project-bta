@@ -6,10 +6,11 @@ export const team = [
     description:
       "Driven by compassion, care, and a desire to inspire, her generous heart led to the founding of this NGO.",
     handles: {
-      instagram: "https://www.instagram.com/comfortaboje/",
-      facebook: "https://www.facebook.com/comfortaboje",
-      twitter: "https://twitter.com/comfortaboje",
-      linkedin: "https://www.linkedin.com/in/comfortaboje/",
+      instagram: "https://www.instagram.com/n.u.g.w.a_?igsh=ZHZ5cm9nMTB4NWJ1",
+      facebook: "https://www.facebook.com/share/14DfrvbK3Ut/",
+      twitter: null,
+      linkedin:
+        "https://www.linkedin.com/in/comfort-aboje-26a146b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     id: 1,
   },
@@ -20,10 +21,11 @@ export const team = [
     description:
       "Oloche Aboje is the co-founder, inspired by compassion and a drive to uplift others.",
     handles: {
-      instagram: "https://www.instagram.com/partner2/",
-      facebook: "https://www.facebook.com/partner2",
-      twitter: "https://twitter.com/partner2",
-      linkedin: "https://www.linkedin.com/in/partner2/",
+      instagram: "https://www.instagram.com/a.oloche?igsh=MW4xemR2ZGdpMHZ4Mg==",
+      facebook: "https://www.facebook.com/share/1AdBL8DkWY/",
+      twitter: "https://x.com/accdev1694?t=KRtna-kjc5NQHjjo5lLduw&s=09",
+      linkedin:
+        "https://www.linkedin.com/in/ao111?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     id: 2,
   },
@@ -32,7 +34,7 @@ export const team = [
     name: "Terdoo Oladipupo",
     position: "Country Director",
     description:
-      "Terdoo Oladipupo, Country Director of Project Bta, is a dedicated and passionate partner.",
+      "Terdoo Oladipupo, Country Director of Project Bta, is a dedicated and passionate team player.",
     handles: {
       instagram: "https://www.instagram.com/terdooebenezer/",
       facebook: "https://www.facebook.com/share/1B2YgEhNS9/",
@@ -44,14 +46,16 @@ export const team = [
   },
   {
     image: "/images/solomon.png",
-    name: "Solomon Gana",
-    position: "Position Four",
-    description: "Solomon Gana, Social Media Manager, is a valued partner of the Comfort Aboje Foundation.",
+    name: "Solomon Ijauka",
+    position: "SM Manager",
+    description:
+      "Solomon Ijauka, Social Media Manager, is a valued team member of Project Bta.",
     handles: {
-      instagram: "https://www.instagram.com/partner4/",
-      facebook: "https://www.facebook.com/partner4",
-      twitter: "https://twitter.com/partner4",
-      linkedin: "https://www.linkedin.com/in/partner4/",
+      instagram: "https://www.instagram.com/solomonijauka?igsh=NWxtbTV2MnNsYjNj",
+      facebook: "https://www.facebook.com/share/1ANmPEDe8k/",
+      twitter: "https://x.com/Ijaukasolomon?t=sBvMkSFBMFoLTJmcENQ_1A&s=09",
+      linkedin:
+        "https://www.linkedin.com/in/solomon-ijauka-3aba35217?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     id: 4,
   },
