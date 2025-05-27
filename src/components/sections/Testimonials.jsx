@@ -21,7 +21,7 @@ const Testimonials = () => {
     <section className="min-h-screen text-center bg-dark-green">
       <HeadingOne
         title="What our Beneficiaries say ..."
-        className="mb-21 pt-21"
+        className="mb-21 pt-21 text-secondary"
       />
       <HeadingTwo title="Testimonials" className="text-white" />
       <div className="mt-12">

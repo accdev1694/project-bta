@@ -11,7 +11,7 @@ const Team = () => {
     <section id="team" className="min-h-screen pt-21 text-center bg-white px-[15%]">
       <HeadingOne
         title="Meet the passionate individuals behind our mission."
-        className="mb-24"
+        className="mb-24 text-secondary"
       />
       <HeadingTwo title="Our Team" className="text-secondary" />
       <div className="grid grid-cols-4 mt-4">

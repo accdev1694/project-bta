@@ -1,4 +1,5 @@
 import DonateLink from "./components/DonateLink";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Campaigns from "./components/sections/Campaigns";
 import Donate from "./components/sections/Donate";
@@ -19,6 +20,7 @@ function App() {
       <Team />
       <Donate />
       <Testimonials />
+      <Footer />
     </div>
   );
 }

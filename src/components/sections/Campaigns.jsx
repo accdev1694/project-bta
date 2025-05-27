@@ -1,50 +1,53 @@
 import HeadingTwo from "../HeadingTwo";
-import { upcomingEvent, previousEvent } from "../../utils"; // Assuming you have a campaignsData.js file with these exports
+import { comingEvent, pastEvents } from "../../utils"; // Assuming you have a campaignsData.js file with these exports
 import { useEffect, useState } from "react";
 const Campaigns = () => {
-  const [previous, setPrevious] = useState(0);
-  const [coming, setComing] = useState(0);
+  const [past, setPast] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const prevNum = Math.floor(Math.random() * previousEvent.length);
-      setPrevious(prevNum);
+      const prevNum = Math.floor(Math.random() * pastEvents.length);
+      setPast(prevNum);
 
-      const comingNum = Math.floor(Math.random() * upcomingEvent.length);
-      setComing(comingNum);
+      
     }, 6000);
     return () => clearInterval(interval);
-  }, []);
+  }, [pastEvents.length]);
+  
   return (
     <section
       id="campaigns"
-      className=" text-center min-h-screen bg-transparent-green w-screen text-white pt-21"
+      className=" text-center min-h-screen bg-transparent-green w-screen text-white pt-21 px-[15%] flex flex-col justify-center items-center"
     >
       <HeadingTwo title="Our Campaigns" className="text-dark-green" />
-      <div className="flex justify-between">
-        <div className="text-right w-[50%] flex flex-col p-4 text-primary">
-          <h2 className="text-secondary font-bold text-4xl mb-4">Previous Event</h2>
-          <p>Planned visit to distribute supplies.</p>
-          <p>Location: Kuchin</p>
-          <p>Date: 5th June 2025</p>
+      <div className="flex justify-between gap-6">
+
+        {/* Past Events */}
+        <div className="text-left w-[50%] flex flex-col p-4 text-primary">
+          <h2 className="text-accent font-bold text-4xl mb-4">Past Events</h2>
+          <p><span className="font-bold">Mission:</span> {pastEvents[past].mission}</p>
+          <p><span className="font-bold">Location:</span> {pastEvents[past].location}</p>
+          <p><span className="font-bold">Date:</span> {pastEvents[past].date}</p>
           <div className="mt-8 flex justify-end">
             <img
-              className="w-[75%]"
-              src={previousEvent[previous].url}
-              alt={previousEvent[previous].alt}
+              className=" transition"
+              src={pastEvents[past].url}
+              alt={pastEvents[past].alt}
             />
           </div>
         </div>
+
+        {/* Coming Event */}
         <div className="text-left w-[50%] flex flex-col p-4 text-primary">
-          <h2 className="text-secondary font-bold text-4xl mb-4">Upcoming Event</h2>
-          <p>Planned visit to our previous site to distribute supplies.</p>
-          <p>Location: TBD</p>
-          <p>Date: TBD</p>
+          <h2 className="text-secondary font-bold text-4xl mb-4">Coming Event</h2>
+          <p><span className="font-bold">Mission:</span> {comingEvent[0].mission}</p>
+          <p><span className="font-bold">Location:</span> {comingEvent[0].location}</p>
+          <p><span className="font-bold">Date:</span> {comingEvent[0].date}</p>
           <div className="mt-8">
             <img
-              className="w-[75%]"
-              src={upcomingEvent[coming].url}
-              alt={upcomingEvent[coming].alt}
+              className=""
+              src={comingEvent[0].url}
+              alt={comingEvent[0].alt}
             />
           </div>
         </div>

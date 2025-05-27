@@ -1,4 +1,3 @@
-
 export const team = [
   {
     image: "/images/comfort.png",
@@ -52,7 +51,8 @@ export const team = [
     description:
       "Developing and Executing Digital Communication Strategies and Community-based training sessions.",
     handles: {
-      instagram: "https://www.instagram.com/solomonijauka?igsh=NWxtbTV2MnNsYjNj",
+      instagram:
+        "https://www.instagram.com/solomonijauka?igsh=NWxtbTV2MnNsYjNj",
       facebook: "https://www.facebook.com/share/1ANmPEDe8k/",
       twitter: "https://x.com/Ijaukasolomon?t=sBvMkSFBMFoLTJmcENQ_1A&s=09",
       linkedin:
@@ -92,16 +92,43 @@ export const reviews = [
   },
 ];
 
-export const upcomingEvent = [
-  {url: "/images/upcoming/orphanage1.png", alt: "Food Sharing"},
-  {url: "/images/upcoming/orphanage2.png", alt: "Clothing Distribution"},
-  {url: "/images/upcoming/orphanage3.png", alt: "School Supplies"},
-  {url: "/images/upcoming/orphanage4.png", alt: "Health Checkup"},
-]
+export const comingEvent = [
+  {
+    mission: "Planned visit to distribute supplies",
+    location: "Daudu",
+    date: "19th Dec 2015",
+    url: "/images/events/orphanage1.png",
+    alt: "Food Sharing",
+  },
+];
 
-export const previousEvent = [
-  {url: "/images/upcoming/orphanage1.png", alt: "Food Sharing"},
-  {url: "/images/upcoming/orphanage2.png", alt: "Clothing Distribution"},
-  {url: "/images/upcoming/orphanage3.png", alt: "School Supplies"},
-  {url: "/images/upcoming/orphanage4.png", alt: "Health Checkup"},
-]
+export const pastEvents = [
+  {
+    mission: "Planned visit to distribute supplies",
+    location: "Daudu",
+    date: "19th Dec 2015",
+    url: "/images/events/orphanage1.png",
+    alt: "Food Sharing",
+  },
+  {
+    mission: "Clothing Distribution",
+    location: "Kichin",
+    date: "20th Dec 2015",
+    url: "/images/events/orphanage2.png",
+    alt: "Clothing Distribution",
+  },
+  {
+    mission: "School Supplies",
+    location: "Gbere",
+    date: "21st Dec 2015",
+    url: "/images/events/orphanage3.png",
+    alt: "School Supplies",
+  },
+  {
+    mission: "Health Checkup",
+    location: "Kogi",
+    date: "22nd Dec 2015",
+    url: "/images/events/orphanage4.png",
+    alt: "Health Checkup",
+  },
+];
