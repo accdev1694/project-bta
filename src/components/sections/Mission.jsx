@@ -7,7 +7,7 @@ const Mission = () => {
   return (
     <section
       id="mission"
-      className="text-center min-h-screen bg-dark-green w-screen text-white px-[15%] mt-21 pt-21"
+      className="text-center min-h-[calc(100vh-84px)] mt-14 md:mt-21 bg-dark-green w-screen text-white px-[5%] lg:px-[15%]"
     >
       <HeadingOne
         title="There is Something You Can Do"
@@ -20,20 +20,19 @@ const Mission = () => {
 
 We believe that all children deserve a fair chance at success, regardless of their background. Through focused programs and community partnerships, we provide education, mentorship, and life skills that foster growth and long-term impact. By investing in children today, we’re helping shape a brighter, more equitable tomorrow."
       />
-      <div className=" w-full flex justify-between items-center mt-12">
+      <div className=" flex justify-center gap-6 sm:gap-24 items-center mt-12">
         <Goals
-          text="To support underprivileged children in orphanages and IDP camps."
+          text="Orphanages and IDP Camps Support."
           icon="images/goal1.png"
           alt="Loving Handshake"
-          
         />
         <Goals
-          text=" Providing essential relief materials just so they can focus on their learning. "
+          text="Essential relief materials to School Children. "
           icon="images/goal2.png"
           alt="Bowl of food"
         />
         <Goals
-          text="Enabling them to earn a living from upcycling and sustainable practices"
+          text="Training in upcycling and sustainablility"
           icon="images/goal3.png"
           alt="doll made from old clothes"
         />

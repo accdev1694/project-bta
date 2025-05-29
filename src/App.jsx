@@ -9,7 +9,7 @@ import Team from "./components/sections/Team";
 import Testimonials from "./components/sections/Testimonials";
 function App() {
   return (
-    <div className="mt-12">
+    <div className="">
       <Navbar />
       <Home />
       <Mission />

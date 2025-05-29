@@ -1,13 +1,24 @@
 import { Link } from "react-router-dom";
 import DonateLink from "./DonateLink";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
-  const [openMenu, setOpenMenu] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(()=>{
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        setMenuOpen(false)
+      }
+    }
+    window.addEventListener("resize", handleResize)
+    return ()=>{
+      window.removeEventListener("resize", handleResize)
+    }
+  },[setMenuOpen])
   return (
     // Navigation Bar
     <nav className="fixed top-0 left-0 right-0 flex justify-between items-center py-2 px-[10%] z-10 bg-white border-b-accent">
-
       {/* Logo */}
       <a className="flex justify-center items-center" href="#">
         <img
@@ -18,9 +29,34 @@ const Navbar = () => {
       </a>
 
       {/* Burger Menu */}
-      <button className="flex w-8 lg:hidden"><img src="/images/menu.png" alt="Menu Icon" /></button>
+      <button
+        onClick={() => setMenuOpen(!menuOpen)}
+        className="flex w-6 md:w-8 lg:hidden"
+      >
+        <img
+          src={!menuOpen && "/images/menu.png"}
+          alt={!menuOpen && "Menu Icon"}
+        />
+      </button>
       {/* Navigation Links */}
-      <div className="hidden lg:flex font-abel gap-6 justify-center items-center">
+      <div
+        onClick={() => setMenuOpen(false)}
+        className={`
+          ${menuOpen
+            ? "absolute flex flex-col fixed w-full inset-0 items-center justify-center z-30 text-white bg-transparent-green gap-4 font-bold text-lg "
+            : "hidden lg:flex font-abel gap-6 justify-center items-center"}
+        `}
+      >
+        {menuOpen && (
+          <button
+            onClick={() => {
+              setMenuOpen(false);
+            }}
+            className="fixed top-3 md:top-6 right-[9.5%] md:right-[10%] bg-secondary p-2 w-8"
+          >
+            <img src="/images/close.png" alt="Close Icon" />
+          </button>
+        )}
         <a className="hover:font-bold  transition" href="#">
           Home
         </a>
@@ -34,7 +70,11 @@ const Navbar = () => {
           Team
         </a>
         <div className="flex">
-          <DonateLink href="#donate" title="Donate" className="bg-secondary text-white" />
+          <DonateLink
+            href="#donate"
+            title="Donate"
+            className="bg-secondary text-white"
+          />
         </div>
       </div>
     </nav>

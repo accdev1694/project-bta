@@ -26,9 +26,9 @@ html, body {
     --color-tertiary: #ddd4b5;
     --color-default: #c4c4c4;
     --color-accent: #ae2300;
-    --color-green: #379537;
     --color-transparent-default: #d2d2d22e;
     --color-dark-green: #011701;
+    --color-transparent-green: #011701ee;
     
     /* Fonts */
     --font-abel: "Abel", sans-serif;
@@ -77,6 +77,9 @@ html, body {
   }
   .bg-secondary {
     background-color: var(--color-secondary);
+  }
+  .bg-transparent-green {
+    background-color: var(--color-transparent-green);
   }
   .bg-dark-green {
     background-color: var(--color-dark-green);

@@ -17,7 +17,7 @@ const Campaigns = () => {
   return (
     <section
       id="campaigns"
-      className=" text-center min-h-screen bg-transparent-green w-screen text-white pt-21 px-[15%] flex flex-col justify-center items-center"
+      className=" text-center min-h-screen bg-default w-screen text-white pt-21 px-[5%] lg:px-[15%] flex flex-col justify-center items-center"
     >
       <HeadingTwo title="Our Campaigns" className="text-dark-green" />
       <div className="flex justify-between gap-6">

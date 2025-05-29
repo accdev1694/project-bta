@@ -8,7 +8,7 @@ const Team = () => {
   }
 
   return (
-    <section id="team" className="min-h-screen pt-21 text-center bg-white px-[15%]">
+    <section id="team" className="min-h-screen pt-14 md:pt-21 text-center bg-white px-[5%] lg:px-[15%]">
       <HeadingOne
         title="Meet the passionate individuals behind our mission."
         className="mb-24 text-secondary"
