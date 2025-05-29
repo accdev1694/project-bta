@@ -7,7 +7,7 @@ const Mission = () => {
   return (
     <section
       id="mission"
-      className="text-center min-h-[calc(100vh-84px)] mt-14 md:mt-21 bg-dark-green w-screen text-white px-[5%] lg:px-[15%]"
+      className="text-center min-h-screen pt-14 md:pt-21 bg-dark-green w-screen text-white px-[5%] lg:px-[15%]"
     >
       <HeadingOne
         title="There is Something You Can Do"
