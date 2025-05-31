@@ -9,16 +9,13 @@ const Team = () => {
 
   return (
     <section id="team" className="min-h-screen pt-14 md:pt-21 text-center bg-white px-[5%] lg:px-[15%] pb-12">
-      <HeadingOne
-        title="Meet the passionate individuals behind our mission."
-        className="mb-6 lg:mb-24 text-secondary"
-      />
+     
       <HeadingTwo title="Our Team" className="text-secondary" />
       <div className="grid lg:grid-cols-2">
         {team.map((member) => (
           <div
             key={member.id}
-            className="flex flex-col items-center justify-between mt-8 lg:mt-12"
+            className="flex flex-col items-center justify-between mt-6 lg:mt-12"
           >
             <img
               className="rounded-full w-12 lg:w-18 border-secondary"
@@ -32,7 +29,7 @@ const Team = () => {
             <p className="text-[12px] font-inria lg:w-48 mt-2">
               {member.description}
             </p>
-            <div className="flex justify-center items-center gap-4 mt-4">
+            <div className="flex justify-center items-center gap-4 mt-4 ">
               <a href={member.handles.instagram} target="_blank">
                 <img
                   className="w-4"

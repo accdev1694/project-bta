@@ -9,13 +9,13 @@ const CampaignCard = ({ color, eventTitle, mission, location, date, src, alt }) 
         <h2 className={`${color} font-bold text-2xl lg:text-5xl md:text-4xl`} >
           {eventTitle}
         </h2>
-        <p className="mt-2 lg:text-lg">
+        <p className="mt-2 lg:text-lg leading-[1.2]">
           <span className="font-bold ">Mission:</span> {mission}
         </p>
-        <p className=" lg:text-lg">
+        <p className=" lg:text-lg leading-[1.2]">
           <span className="font-bold">Location:</span> {location}
         </p>
-        <p className=" lg:text-lg">
+        <p className=" lg:text-lg leading-[1.2]">
           <span className="font-bold">Date:</span> {date}
         </p>
       </div>
