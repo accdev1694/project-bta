@@ -31,7 +31,7 @@ const Navbar = () => {
       {/* Burger Menu */}
       <button
         onClick={() => setMenuOpen(!menuOpen)}
-        className="flex w-6 md:w-8 lg:hidden"
+        className="flex w-6 md:w-8 lg:hidden cursor-pointer"
       >
         <img
           src={!menuOpen && "/images/menu.png"}
@@ -52,7 +52,7 @@ const Navbar = () => {
             onClick={() => {
               setMenuOpen(false);
             }}
-            className="fixed top-3 md:top-6 right-[9.5%] md:right-[10%] bg-secondary p-2 w-8"
+            className="fixed top-3 md:top-6 right-[9.5%] md:right-[10%] bg-secondary p-2 w-8  cursor-pointer"
           >
             <img src="/images/close.png" alt="Close Icon" />
           </button>
