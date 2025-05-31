@@ -5,7 +5,7 @@ import Contact from "../Contact";
 
 const Donate = () => {
   return (
-    <section id="donate" className="min-h-screen text-center pt-21">
+    <section id="donate" className="min-h-screen text-center pt-14 md:pt-21 mx-[5%]">
       <HeadingOne
         title="Join us in transforming lives through your generous donations and volunteer efforts."
         className="mb-30 text-secondary"
