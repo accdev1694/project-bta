@@ -1,6 +1,7 @@
 import HeadingTwo from "../HeadingTwo";
-import { comingEvent, pastEvents } from "../../utils"; // Assuming you have a campaignsData.js file with these exports
 import { useEffect, useState } from "react";
+import { comingEvent, pastEvents } from "../../utils"; // Assuming you have a campaignsData.js file with these exports
+import CampaignCard from "../CampaignCard";
 const Campaigns = () => {
   const [past, setPast] = useState(0);
 
@@ -8,49 +9,65 @@ const Campaigns = () => {
     const interval = setInterval(() => {
       const prevNum = Math.floor(Math.random() * pastEvents.length);
       setPast(prevNum);
-
-      
     }, 6000);
     return () => clearInterval(interval);
   }, [pastEvents.length]);
-  
+
   return (
     <section
       id="campaigns"
-      className=" text-center min-h-screen bg-default w-screen text-white pt-21 px-[5%] lg:px-[15%] flex flex-col justify-center items-center"
+      className=" text-center min-h-screen bg-default w-screen text-white pt-21 px-[5%] sm:px-[15%]"
     >
-      <HeadingTwo title="Our Campaigns" className="text-dark-green" />
-      <div className="flex justify-between gap-6">
+      <HeadingTwo title="Our Campaigns" className="text-dark-green mb-8" />
+      <div className="flex flex-col gap-12">
+        {/* Coming Event */}
+        <CampaignCard
+        color="text-secondary"
+          eventTitle="Coming Event"
+          mission={comingEvent[0].mission}
+          location={comingEvent[0].location}
+          date={comingEvent[0].date}
+          src={comingEvent[0].url}
+          alt={comingEvent[0].alt}
+        />
 
         {/* Past Events */}
-        <div className="text-left w-[50%] flex flex-col p-4 text-primary">
-          <h2 className="text-accent font-bold text-4xl mb-4">Past Events</h2>
-          <p><span className="font-bold">Mission:</span> {pastEvents[past].mission}</p>
-          <p><span className="font-bold">Location:</span> {pastEvents[past].location}</p>
-          <p><span className="font-bold">Date:</span> {pastEvents[past].date}</p>
-          <div className="mt-8 flex justify-end">
+
+        <CampaignCard
+        color="text-accent"
+          eventTitle="Past Event"
+          mission={pastEvents[past].mission}
+          location={pastEvents[past].location}
+          date={pastEvents[past].date}
+          src={pastEvents[past].url}
+          alt={pastEvents[past].alt}
+        />
+
+        {/* <div className="text-left flex flex-col items-start text-primary gap-4">
+          <div className="">
+            <h2 className="text-accent font-bold text-2xl md:text-4xl">
+              Past Events
+            </h2>
+            <p className="">
+              <span className="font-bold">Mission:</span>{" "}
+              {pastEvents[past].mission}
+            </p>
+            <p>
+              <span className="font-bold">Location:</span>{" "}
+              {pastEvents[past].location}
+            </p>
+            <p>
+              <span className="font-bold">Date:</span> {pastEvents[past].date}
+            </p>
+          </div>
+          <div className="">
             <img
               className=" transition"
               src={pastEvents[past].url}
               alt={pastEvents[past].alt}
             />
           </div>
-        </div>
-
-        {/* Coming Event */}
-        <div className="text-left w-[50%] flex flex-col p-4 text-primary">
-          <h2 className="text-secondary font-bold text-4xl mb-4">Coming Event</h2>
-          <p><span className="font-bold">Mission:</span> {comingEvent[0].mission}</p>
-          <p><span className="font-bold">Location:</span> {comingEvent[0].location}</p>
-          <p><span className="font-bold">Date:</span> {comingEvent[0].date}</p>
-          <div className="mt-8">
-            <img
-              className=""
-              src={comingEvent[0].url}
-              alt={comingEvent[0].alt}
-            />
-          </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
