@@ -18,14 +18,14 @@ const Testimonials = () => {
   }, [reviews.length]);
 
   return (
-    <section className="min-h-screen text-center bg-dark-green">
+    <section className="min-h-screen text-center bg-dark-green px-[5%] lg:px-[15%]">
       <HeadingOne
         title="What our Beneficiaries say ..."
         className="mb-21 pt-21 text-secondary"
       />
       <HeadingTwo title="Testimonials" className="text-white" />
       <div className="mt-12">
-        <p className="text-default w-[50%] text-center m-auto mb-6">{`"${reviews[x].message}"`}</p>
+        <p className="text-default text-center mb-6 sm:text-lg">{`"${reviews[x].message}"`}</p>
         <img
           className="m-auto rounded-full mb-2"
           src={reviews[x].image}
