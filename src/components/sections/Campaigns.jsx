@@ -16,9 +16,9 @@ const Campaigns = () => {
   return (
     <section
       id="campaigns"
-      className=" text-center min-h-screen bg-default w-screen text-white pt-21 px-[5%] pb-12"
+      className=" text-center min-h-screen bg-default w-screen text-white pt-21 px-[5%] xl:px-[15%] pb-12"
     >
-      <HeadingTwo title="Our Campaigns" className="text-left sm:text-center text-dark-green mb-8 sm:mb-18" />
+      <HeadingTwo title="Our Campaigns" className="text-left text-dark-green mb-8 sm:mb-18" />
       <div className="flex flex-col md:flex-row gap-12 sm:gap-18">
         {/* Coming Event */}
         <CampaignCard

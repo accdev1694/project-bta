@@ -8,28 +8,28 @@ const Team = () => {
   }
 
   return (
-    <section id="team" className="min-h-screen pt-14 md:pt-21 text-center bg-white px-[5%] lg:px-[15%] pb-12">
+    <section id="team" className="min-h-screen pt-14 md:pt-21 text-center bg-white px-[5%] lg:px-[15%]">
      
       <HeadingTwo title="Our Team" className="text-secondary" />
       <div className="grid lg:grid-cols-2">
         {team.map((member) => (
           <div
             key={member.id}
-            className="flex flex-col items-center justify-between mt-6 lg:mt-12"
+            className="flex flex-col items-center justify-between mt-8 lg:mt-12"
           >
             <img
-              className="rounded-full w-12 lg:w-18 border-secondary"
+              className="rounded-full w-10 lg:w-18 border-secondary"
               src={member.image}
               alt={member.name}
             />
-            <h3 className="mt-2 font-bold text-sm font-abel tracking-wide">
+            <h3 className=" font-bold text-xs font-abel tracking-wide">
               {member.name}
             </h3>
-            <p className="text-sm font-inria">{member.position}</p>
-            <p className="text-[12px] font-inria lg:w-48 mt-2">
+            <p className="text-[0.5em] font-inria">{member.position}</p>
+            <p className="text-[0.6em] font-inria lg:w-48 mt-1">
               {member.description}
             </p>
-            <div className="flex justify-center items-center gap-4 mt-4 ">
+            <div className="flex justify-center items-center gap-4 mt-2 ">
               <a href={member.handles.instagram} target="_blank">
                 <img
                   className="w-4"
