@@ -1,12 +1,17 @@
-
-const CampaignCard = ({ color, eventTitle, mission, location, date, src, alt }) => {
- 
-  
-    return (
+const CampaignCard = ({
+  className,
+  eventTitle,
+  mission,
+  location,
+  date,
+  src,
+  alt,
+}) => {
+  return (
     <div className="flex items-start flex-col sm:flex-row sm:items-end md:flex-col items-end gap-4 text-left text-primary">
       {/* Details Container */}
       <div className="w-full sm:w-[35%] md:w-full">
-        <h2 className={`${color} font-bold text-xl lg:text-5xl md:text-4xl`} >
+        <h2 className={`${className} font-bold text-xl lg:text-5xl md:text-4xl`}>
           {eventTitle}
         </h2>
         <p className="text-xs lg:text-lg leading-[1.2]">
