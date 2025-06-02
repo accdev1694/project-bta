@@ -18,11 +18,14 @@ const Campaigns = () => {
       id="campaigns"
       className=" text-center min-h-screen bg-default w-screen text-white pt-21 px-[5%] xl:px-[15%] pb-12"
     >
-      <HeadingTwo title="Our Campaigns" className="text-left text-dark-green mb-8 sm:mb-18" />
-      <div className="flex flex-col md:flex-row gap-12 sm:gap-18">
+      <HeadingTwo
+        title="Our Campaigns"
+        className="text-left text-dark-green mb-2 sm:mb-18"
+      />
+      <div className="flex flex-col md:flex-row gap-8 sm:gap-18">
         {/* Coming Event */}
         <CampaignCard
-        color="text-secondary"
+          color="text-secondary"
           eventTitle="Coming Event"
           mission={comingEvent[0].mission}
           location={comingEvent[0].location}
@@ -34,7 +37,7 @@ const Campaigns = () => {
         {/* Past Events */}
 
         <CampaignCard
-        color="text-accent"
+          color="text-accent"
           eventTitle="Past Event"
           mission={pastEvents[past].mission}
           location={pastEvents[past].location}
@@ -42,32 +45,6 @@ const Campaigns = () => {
           src={pastEvents[past].url}
           alt={pastEvents[past].alt}
         />
-
-        {/* <div className="text-left flex flex-col items-start text-primary gap-4">
-          <div className="">
-            <h2 className="text-accent font-bold text-2xl md:text-4xl">
-              Past Events
-            </h2>
-            <p className="">
-              <span className="font-bold">Mission:</span>{" "}
-              {pastEvents[past].mission}
-            </p>
-            <p>
-              <span className="font-bold">Location:</span>{" "}
-              {pastEvents[past].location}
-            </p>
-            <p>
-              <span className="font-bold">Date:</span> {pastEvents[past].date}
-            </p>
-          </div>
-          <div className="">
-            <img
-              className=" transition"
-              src={pastEvents[past].url}
-              alt={pastEvents[past].alt}
-            />
-          </div>
-        </div> */}
       </div>
     </section>
   );
